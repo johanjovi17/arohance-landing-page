@@ -1,0 +1,286 @@
+.services-hero-container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../../../public/assets/services-hero-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.services-hero-container-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100%;
+  flex-direction: column;
+}
+.services-hero-title {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.services-hero-mini-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 300px;
+}
+/* what we do section */
+.what-we-do-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../public/assets/services-what-we-do-pic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  color: #fff;
+}
+.what-we-do-top-content {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+.what-we-do-title {
+  font-size: 15px;
+}
+.what-we-do-desc {
+  margin-top: 20px;
+  font-size: 35px;
+}
+.what-we-do-down-content {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.what-we-do-down-content-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.what-we-do-down-content-desc {
+  margin-bottom: 20px;
+}
+.what-we-do-list-items {
+  margin-right: 210px;
+  list-style: none;
+}
+.what-we-do-list-item {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+/* services grid section */
+.services-grid-section {
+  height: 300vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  flex-direction: column;
+  color: #fff;
+}
+.services-grid-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.services-grid-box-1 {
+  background-color: #ec4b46;
+  height: 250px;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  margin: 10px 0;
+}
+.services-grid-box-2 {
+  background-color: #f59d6a;
+  height: 250px;
+  padding: 20px;
+  width: 80%;
+  height: 300px;
+  margin: 10px 0;
+}
+.services-grid-box-title {
+  margin-bottom: 5px;
+}
+.services-grid-box-desc {
+  margin-top: 50px;
+  line-height: 23px;
+}
+/* grid box bottom content */
+.services-grid-bottom-container {
+  margin-top: 100px;
+}
+.services-grid-bottom-container-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+.services-grid-bottom-container-mini-title {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.services-grid-bottom-container-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.services-grid-bottom-container-desc {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+.services-grid-bottom-container-btn {
+  border: solid 2px #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.6s ease;
+  width: 40%;
+}
+.services-grid-bottom-container-btn:hover {
+  background-color: #fff;
+  color: brown;
+}
+@media only screen and (min-width: 1000px) {
+  .services-hero-container {
+    background-attachment: fixed;
+  }
+  .services-hero-container-content {
+    padding: 0 130px;
+  }
+  .services-hero-title {
+    font-size: 180px;
+    width: 100%;
+    text-align: left;
+  }
+  .services-hero-mini-title {
+    text-align: right;
+    font-size: 35px;
+    font-weight: bold;
+    width: 100%;
+  }
+  /* what we do section */
+  .what-we-do-section {
+    height: 150vh;
+    width: 100%;
+    background-image: url("../../../public/assets/services-what-we-do-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 100px;
+    color: #fff;
+  }
+  .what-we-do-top-content {
+    width: 600px;
+    margin-left: 300px;
+  }
+  .what-we-do-title {
+    font-size: 20px;
+  }
+  .what-we-do-desc {
+    margin-top: 20px;
+    font-size: 45px;
+    width: 400px;
+  }
+  .what-we-do-down-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 300px;
+  }
+  .what-we-do-down-content-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+
+    margin-right: 170px;
+    text-align: center;
+  }
+  .what-we-do-down-content-desc {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  .what-we-do-list-items {
+    margin-right: 210px;
+    list-style: none;
+  }
+  .what-we-do-list-item {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  /* services grid section */
+  .services-grid-section {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    flex-direction: column;
+    padding: 20px 0;
+    color: #fff;
+  }
+  .services-grid-row {
+    width: 70%;
+    flex-direction: row;
+  }
+  .services-grid-box-1 {
+    background-color: #ec4b46;
+    height: 250px;
+    padding: 30px;
+    width: 900px;
+    margin: 10px;
+  }
+  .services-grid-box-2 {
+    margin: 10px;
+    width: 900px;
+    background-color: #f59d6a;
+    height: 250px;
+    padding: 30px;
+  }
+  .services-grid-box-title {
+    margin-bottom: 5px;
+  }
+  .services-grid-box-desc {
+    margin-top: 50px;
+    line-height: 23px;
+  }
+  /* grid box bottom content */
+  .services-grid-bottom-container {
+    margin-top: 100px;
+  }
+  .services-grid-bottom-container-mini-title {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .services-grid-bottom-container-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .services-grid-bottom-container-desc {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  .services-grid-bottom-container-btn {
+    border: solid 2px #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.6s ease;
+    text-align: center;
+  }
+  .services-grid-bottom-container-btn:hover {
+    background-color: #fff;
+    color: brown;
+  }
+}
