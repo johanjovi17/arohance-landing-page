@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./form.css";
+import { motion } from "framer-motion";
 
 function Form() {
   // Define state variables to store form data
@@ -37,9 +38,16 @@ function Form() {
 
   return (
     <div className="form-container">
-      <h2 className="contact-form-heading">
+      <motion.h2
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: { delay: 0.5, ease: "easeIn" },
+        }}
+        className="contact-form-heading"
+      >
         Let’s build amazing <br /> things together
-      </h2>
+      </motion.h2>
       <form onSubmit={handleSubmit}>
         <div className="contact-form-names">
           <div className="first-name-container">
@@ -108,7 +116,18 @@ function Form() {
           Submit
         </button>
       </form>
-      <div className="get-touch-container">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{
+          delay: 0.5,
+          y: { type: "spring", stiffness: 60 },
+          opacity: { duration: 1 },
+          ease: "easeIn",
+          duration: 1,
+        }}
+        className="get-touch-container"
+      >
         <h2 className="get-touch-title">Get In Touch</h2>
         <div className="get-touch-mini-title">Reach Us</div>
         <ul className="get-touch-list">
@@ -138,7 +157,7 @@ function Form() {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

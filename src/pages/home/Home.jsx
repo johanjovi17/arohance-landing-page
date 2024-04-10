@@ -367,7 +367,7 @@ function Home() {
       <div class="split-content-container">
         <div class="split-content-central-content">
           <motion.div
-            initial={{ x: -100, opacity: 0 }}
+            initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{
               delay: 0.4,
@@ -400,7 +400,7 @@ function Home() {
           </motion.div>
           <div class="split-content-right-content">
             <motion.img
-              initial={{ x: 100, opacity: 0 }}
+              initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               transition={{
                 delay: 0.4,

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import "./Service.css";
+import { motion } from "framer-motion";
 
 function Services() {
   return (
@@ -9,23 +10,81 @@ function Services() {
       <div className="services-hero-container">
         <Navbar />
         <div className="services-hero-container-content">
-          <h1 className="services-hero-title">Services</h1>
-          <h2 className="services-hero-mini-title">
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              duration: 1,
+            }}
+            className="services-hero-title"
+          >
+            Services
+          </motion.h1>
+          <motion.h2
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-hero-mini-title"
+          >
             We provide a wide range of Services
-          </h2>
+          </motion.h2>
         </div>
       </div>
       {/* what we do section */}
       <div className="what-we-do-section">
         <div className="what-we-do-top-content">
-          <span className="what-we-do-title">WHAT WE DO</span>
-          <h1 className="what-we-do-desc">
+          <motion.span
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="what-we-do-title"
+          >
+            WHAT WE DO
+          </motion.span>
+          <motion.h1
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="what-we-do-desc"
+          >
             Arohance offers cutting-edge web development, tailored digital
             marketing, and expert paid social media, Services for unparalleled
             Online performance and growth.
-          </h1>
+          </motion.h1>
         </div>
-        <div className="what-we-do-down-content">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.5,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className="what-we-do-down-content"
+        >
           <h3 className="what-we-do-down-content-title">Digital Experiences</h3>
           <span className="what-we-do-down-content-desc">
             From web development to marketing, we’re here to elevate your online
@@ -36,12 +95,23 @@ function Services() {
             <li className="what-we-do-list-item">EXPERIENCE</li>
             <li className="what-we-do-list-item">VALUE</li>
           </ul>
-        </div>
+        </motion.div>
       </div>
       {/* services grid section */}
       <div className="services-grid-section">
         <div className="services-grid-row">
-          <div className="services-grid-box-1">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.3,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-1"
+          >
             <h1 className="services-grid-box-title">Marketing Strategy</h1>
             <span className="services-grid-box-num">01</span>
             <p className="services-grid-box-desc">
@@ -50,8 +120,19 @@ function Services() {
               content, and data-driven insights to maximize ROI and drive brand
               growth.
             </p>
-          </div>
-          <div className="services-grid-box-2">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-2"
+          >
             <h1 className="services-grid-box-title">Research And Planning</h1>
             <span className="services-grid-box-num">02</span>
             <p className="services-grid-box-desc">
@@ -60,10 +141,21 @@ function Services() {
               conducts thorough analyses and provides actionable insights for
               informed business growth strategies.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="services-grid-row">
-          <div className="services-grid-box-2">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-2"
+          >
             <h1 className="services-grid-box-title">Full Funnel Build</h1>
             <span className="services-grid-box-num">03</span>
             <p className="services-grid-box-desc">
@@ -71,8 +163,19 @@ function Services() {
               customers through every stage, optimizing campaigns for maximum
               engagement and ROI. Elevate your marketing with us today!
             </p>
-          </div>
-          <div className="services-grid-box-1">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.6,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-1"
+          >
             <h1 className="services-grid-box-title">Digital Advertising</h1>
             <span className="services-grid-box-num">04</span>
             <p className="services-grid-box-desc">
@@ -81,10 +184,21 @@ function Services() {
               with our tailored strategies and compelling creatives. Boost your
               brand today!
             </p>
-          </div>
+          </motion.div>
         </div>
         <div className="services-grid-row">
-          <div className="services-grid-box-1">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.7,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-1"
+          >
             <h1 className="services-grid-box-title">Brand Building</h1>
             <span className="services-grid-box-num">05</span>
             <p className="services-grid-box-desc">
@@ -93,8 +207,19 @@ function Services() {
               crafting a unique brand image to connect with target audiences and
               drive loyalty.
             </p>
-          </div>
-          <div className="services-grid-box-2">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.8,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            className="services-grid-box-2"
+          >
             <h1 className="services-grid-box-title">Media Strategy</h1>
             <span className="services-grid-box-num">06</span>
             <p className="services-grid-box-desc">
@@ -103,9 +228,20 @@ function Services() {
               content reaches the right audience, enhancing brand presence and
               driving growth.
             </p>
-          </div>
+          </motion.div>
         </div>
-        <div className="services-grid-bottom-container">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            delay: 0.5,
+            x: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          className="services-grid-bottom-container"
+        >
           <div className="services-grid-bottom-container-content">
             <p className="services-grid-bottom-container-mini-title">
               VISION & INNOVATION
@@ -121,7 +257,7 @@ function Services() {
               GET IN TOUCH
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </>
