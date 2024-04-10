@@ -49,6 +49,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css"; // Import your CSS file for navbar styles
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,11 +61,20 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Link to="/" activeClassName="active-link" className=" nav-item link">
-        <span className="logo">TapOver.</span>
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, transition: { delay: 0.5, ease: "easeIn" } }}
+          className="logo"
+        >
+          TapOver.
+        </motion.span>
       </Link>
       <div className={`nav-items-container ${isMenuOpen ? "active" : ""}`}>
         <ul className="nav-items">
-          <li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1, ease: "easeIn" } }}
+          >
             <Link
               to="/"
               activeClassName="active-link"
@@ -73,8 +83,11 @@ const Navbar = () => {
             >
               Home
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1.1, ease: "easeIn" } }}
+          >
             <Link
               to="/about"
               className="nav-item link"
@@ -82,8 +95,11 @@ const Navbar = () => {
             >
               About
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1.2, ease: "easeIn" } }}
+          >
             <Link
               to="/services"
               className="nav-item link"
@@ -91,8 +107,11 @@ const Navbar = () => {
             >
               Services
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { delay: 1.3, ease: "easeIn" } }}
+          >
             <Link
               to="/contact"
               className="nav-item link"
@@ -100,7 +119,7 @@ const Navbar = () => {
             >
               Contact
             </Link>
-          </li>
+          </motion.li>
         </ul>
       </div>
       <div className="hamburger-menu" onClick={toggleMenu}>

@@ -2,6 +2,10 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
+// animation
+import { motion } from "framer-motion";
+// variants
+// import { fadeIn } from "../../variants";
 
 function Home() {
   return (
@@ -11,16 +15,51 @@ function Home() {
 
         {/* hero content  */}
         <div class="hero-content">
-          <div class="small-title">
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.2,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="small-title"
+          >
             WEB DEVELOPMENT, ADVERTISING & MARKETING AGENCY
-          </div>
-          <div class="title-big">
+          </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.3,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="title-big"
+          >
             We help <br />
             brands Grow Beautifully
-          </div>
-          <a href="" class="hero-btn">
-            GET STARTED NOW
-          </a>
+          </motion.div>
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 0.3 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+          >
+            <a href="" class="hero-btn">
+              GET STARTED NOW
+            </a>
+          </motion.div>
         </div>
       </div>
 
@@ -28,7 +67,14 @@ function Home() {
       <div class="grid-container">
         <div class="grid-content">
           <div class="grid-box-section row1">
-            <div class="grid-box">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 0.5, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">Design</h4>
               <span class="grid-box-num">01</span>
               <ul class="grid-list">
@@ -40,8 +86,15 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
-            <div class="grid-box">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 0.6, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">Development</h4>
               <span class="grid-box-num">02</span>
               <ul class="grid-list">
@@ -54,8 +107,15 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
-            <div class="grid-box">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 0.7, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">Marketing</h4>
               <span class="grid-box-num">03</span>
               <ul class="grid-list">
@@ -68,10 +128,17 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
+            </motion.div>
           </div>
           <div class="grid-box-section row2">
-            <div class="grid-box">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 0.8, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">Social Media</h4>
               <span class="grid-box-num">04</span>
               <ul class="grid-list">
@@ -85,8 +152,15 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
-            <div class="grid-box">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 0.9, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">NFC</h4>
               <span class="grid-box-num">05</span>
               <ul class="grid-list">
@@ -98,8 +172,15 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
-            <div class="grid-box">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                transition: { delay: 1, ease: "easeIn" },
+              }}
+              class="grid-box"
+            >
               <h4 class="grid-title">Help and Support</h4>
               <span class="grid-box-num">06</span>
               <ul class="grid-list">
@@ -112,79 +193,191 @@ function Home() {
               <a href="" class="grid-read-more-btn">
                 READ MORE
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
       {/* <!-- web solutions section --> */}
       <div class="web-solutions-container">
-        <h2 class="web-solutions-heading">Web Solutions</h2>
-        <h4 class="web-solutions-mini-title">
+        <motion.h2
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          class="web-solutions-heading"
+        >
+          Web Solutions
+        </motion.h2>
+        <motion.h4
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{
+            delay: 0.4,
+            y: { type: "spring", stiffness: 60 },
+            opacity: { duration: 1 },
+            ease: "easeIn",
+            duration: 1,
+          }}
+          class="web-solutions-mini-title"
+        >
           We create your digital presence and increase your visibility with our
           web development solutions.
-        </h4>
+        </motion.h4>
         <div class="web-solutions-row">
-          <div class="web-solutions-box">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Search Engine Optimization</h3>
             <p class="web-solution-box-description">
               With effective SEO practices, we increase the ranking of your
               website and increase site traffic and visibility.
             </p>
-          </div>
-          <div class="web-solutions-box">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">E-Commerce Solutions</h3>
             <p class="web-solution-box-description">
               As Shopify experts, we enhance your e-commerce store with tailored
               solutions and seamless transitions.
             </p>
-          </div>
-          <div class="web-solutions-box">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Digital Media Planning</h3>
             <p class="web-solution-box-description">
               We create the media strategy for your brand on digital channels
               with advertising technologies suitable for your marketing strategy
               and target audience.
             </p>
-          </div>
+          </motion.div>
         </div>
         <div class="web-solutions-row">
-          <div class="web-solutions-box">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Content Marketing</h3>
             <p class="web-solution-box-description">
               We deliver your products and services to your potential customers
               both domestically and abroad with content marketing, which is a
               new generation digital communication tool.
             </p>
-          </div>
-          <div class="web-solutions-box">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Web Development</h3>
             <p class="web-solution-box-description">
               We develop software solutions tailored to the specific needs of
               your business, making your processes more efficient.
             </p>
-          </div>
-          <div class="web-solutions-box">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Performance Marketing</h3>
             <p class="web-solution-box-description">
               With performance marketing solutions that suit your marketing
               strategy, we increase your online presence in the digital world
               and achieve real results for your business.
             </p>
-          </div>
-          <div class="web-solutions-box">
+          </motion.div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="web-solutions-box"
+          >
             <h3 class="web-solution-box-title">Influencer Marketing</h3>
             <p class="web-solution-box-description">
               Utilize influencer marketing to amplify your brand's reach.
               Connect with authentic creators to engage your audience and drive
               conversions, maximizing your marketing impact.
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* <!-- Split content section --> */}
       <div class="split-content-container">
         <div class="split-content-central-content">
-          <div class="split-content-left-content">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="split-content-left-content"
+          >
             <h1 class="split-content-heading">
               We are an Website Development Advertising & Marketing firm .
             </h1>
@@ -204,9 +397,18 @@ function Home() {
               creative content grabs attention and converts leads. Partner with
               Us and unlock the privilege of a thriving digital future.
             </p>
-          </div>
+          </motion.div>
           <div class="split-content-right-content">
-            <img
+            <motion.img
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.4,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
               src="/assets/split-screen-pic.jpg"
               alt="split-screen-pic"
               class="split-screen-pic"
@@ -217,13 +419,34 @@ function Home() {
       {/* <!-- reviews section --> */}
       <div class="review-container">
         <div class="review-container-central-content">
-          <h2 class="review-title">Our Clients Review</h2>
-          <span class="review-mini-title">
+          <motion.h2
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
+            class="review-title"
+          >
+            Our Clients Review
+          </motion.h2>
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { delay: 0.5 } }}
+            class="review-mini-title"
+          >
             Don’t settle for mediocrity. Choose Bytedepth and watch your brand
             soar!
-          </span>
+          </motion.span>
           <span class="review-section-line"></span>
-          <div class="review-row">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="review-row"
+          >
             <div class="review-box">
               <p class="review-text">
                 Exceptional service! This company goes above and beyond to meet
@@ -252,9 +475,20 @@ function Home() {
                 <span class="review-person-name">Sourav</span>
               </div>
             </div>
-          </div>
+          </motion.div>
           <span class="review-section-line"></span>
-          <div class="review-row">
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{
+              delay: 0.4,
+              y: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="review-row"
+          >
             <div class="review-box">
               <p class="review-text">
                 Impressive attention to detail and excellent communication.
@@ -283,25 +517,58 @@ function Home() {
                 <span class="review-person-name">Rajiv</span>
               </div>
             </div>
-          </div>
+          </motion.div>
           <span class="review-section-line"></span>
         </div>
         <div class="review-bottom-row">
           <div class="review-bottom-left-content">
-            <h2 class="review-bottom-heading">
+            <motion.h2
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.4,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              class="review-bottom-heading"
+            >
               Would you like to start a project with us?
-            </h2>
-            <p class="review-bottom-desc">
+            </motion.h2>
+            <motion.p
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.4,
+                x: { type: "spring", stiffness: 60 },
+                opacity: { duration: 1 },
+                ease: "easeIn",
+                duration: 1,
+              }}
+              class="review-bottom-desc"
+            >
               Embark on a journey of digital excellence! Ready to turn your
               ideas into reality? Let's collaborate and launch a successful
               project together.
-            </p>
+            </motion.p>
           </div>
-          <div class="review-bottom-right-content">
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{
+              delay: 0.5,
+              x: { type: "spring", stiffness: 60 },
+              opacity: { duration: 1 },
+              ease: "easeIn",
+              duration: 1,
+            }}
+            class="review-bottom-right-content"
+          >
             <a href="#" class="review-bottom-btn">
               START A PROJECT
             </a>
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* <!-- Incremental counter section --> */}
@@ -327,72 +594,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <!-- image grid section --> */}
-      {/* <div class="image-grid-container">
-        <div class="img-grid-row">
-          <div class="img-grid-box">
-            <img src="img-grid-1.jpg" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Bellini Special</h3>
-              <span class="img-grid-mini-title">DIGITAL ADVERTISING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <img src="img-grid-2.webp" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <img src="img-grid-3.jpeg" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <img src="img-grid-4.jpg" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-        </div>
-        <div class="img-grid-row">
-          <div class="img-grid-box">
-            <img src="img-grid-2.webp" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <img src="img-grid-2.webp" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <img src="img-grid-2.webp" alt="" class="img-grid-img" />
-            <div class="img-grid-title-container">
-              <h3 class="img-grid-title">Grateful INC</h3>
-              <span class="img-grid-mini-title">RESEARCH & PLANNING</span>
-            </div>
-          </div>
-          <div class="img-grid-box">
-            <div class="img-grid-last-box">
-              <h1 class="img-grid-title-last-box-title">
-                Next Project Will Be Yours
-              </h1>
-              <a href="" class="img-grid-btn">
-                GET STARTED NOW
-              </a>
-            </div>
-          </div>
-        </div>
-      </div> */}
+
       {/* <!-- index page footer --> */}
       <Footer />
     </>

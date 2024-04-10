@@ -46,7 +46,7 @@
 }
 /* grid section */
 .grid-container {
-  height: 250vh;
+  height: 280vh;
   width: 100%;
   background-color: #000;
   padding-top: 50px;
@@ -97,7 +97,7 @@
 }
 /* web solns part */
 .web-solutions-container {
-  height: 230vh;
+  height: 250vh;
   width: 100%;
   background-color: #000;
   display: flex;
@@ -134,7 +134,7 @@
 }
 /* split screen section */
 .split-content-container {
-  height: 150vh;
+  height: 180vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -269,7 +269,7 @@
 }
 /* incremental counter section */
 .incremental-counter-container {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   display: flex;
   color: brown;
@@ -314,6 +314,7 @@
   }
   .small-title {
     font-size: 18px;
+    width: 600px;
     margin-bottom: 30px;
   }
   .title-big {
