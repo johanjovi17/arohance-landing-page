@@ -28,6 +28,7 @@
   font-size: 30px;
   font-weight: bold;
   width: 300px;
+  color: #ff0000;
 }
 /* what we do section */
 .what-we-do-section {
@@ -47,6 +48,7 @@
 }
 .what-we-do-title {
   font-size: 15px;
+  color: #ff0000;
 }
 .what-we-do-desc {
   margin-top: 20px;
@@ -61,6 +63,7 @@
 .what-we-do-down-content-title {
   font-size: 25px;
   margin-bottom: 20px;
+  color: #ff0000;
   text-align: left;
 }
 .what-we-do-down-content-desc {
@@ -107,6 +110,7 @@
   height: 300px;
   margin: 10px 0;
 }
+
 .services-grid-box-title {
   margin-bottom: 5px;
 }
@@ -131,6 +135,7 @@
 .services-grid-bottom-container-title {
   font-size: 30px;
   font-weight: bold;
+  color: #ff0000;
   margin-bottom: 20px;
 }
 .services-grid-bottom-container-desc {
@@ -139,10 +144,10 @@
   margin-bottom: 50px;
 }
 .services-grid-bottom-container-btn {
-  border: solid 2px #fff;
+  border: solid 2px #ff0000;
   padding: 10px 30px;
   text-decoration: none;
-  color: #fff;
+  color: #ff0000;
   transition: all 0.6s ease;
   width: 40%;
 }
@@ -272,15 +277,14 @@
     margin-bottom: 50px;
   }
   .services-grid-bottom-container-btn {
-    border: solid 2px #fff;
     padding: 10px 30px;
     text-decoration: none;
-    color: #fff;
     transition: all 0.6s ease;
     text-align: center;
   }
   .services-grid-bottom-container-btn:hover {
     background-color: #fff;
-    color: brown;
+    border: solid 2px #fff;
+    color: #ff0000;
   }
 }

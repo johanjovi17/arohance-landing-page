@@ -37,7 +37,7 @@
   transition: all 0.4s ease;
 }
 .footer-social-media-link:hover {
-  color: brown;
+  color: #ff0000;
   cursor: pointer;
 }
 .footer-top-content-right-content {
@@ -60,7 +60,7 @@
   margin-bottom: 5px;
 }
 .contact-item:hover {
-  color: brown;
+  color: #ff0000;
 }
 .copyright-statement {
   font-size: 15px;

@@ -75,7 +75,7 @@ function Footer() {
         </div>
       </div>
       <p class="copyright-statement">
-        Copyright © 2024 TapOver | Powered by TapOver
+        Copyright © 2024 Arohance | Powered by Arohance
       </p>
     </div>
   );

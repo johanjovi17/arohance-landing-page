@@ -1,5 +1,5 @@
 .form-container {
-  background: linear-gradient(to bottom, #78aaff, #cad3e8);
+  background: linear-gradient(to bottom, #ff7300, #ff0000);
   height: 210vh;
   width: 100%;
   display: flex;
@@ -75,7 +75,7 @@
   cursor: pointer;
   font-size: 15px;
   color: #fff;
-  background-color: #1b2d52;
+  background-color: #ff7300;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -85,11 +85,11 @@
 }
 .contact-form-submit-btn:hover {
   color: #fff;
-  background-color: #98a2b3;
+  background-color: #ff0000;
 }
 .get-touch-container {
   margin-top: 80px;
-  background-color: #1b2d52;
+  background-color: #ff7300;
   padding-left: 10px;
 }
 .get-touch-title {
@@ -159,7 +159,6 @@
 }
 @media only screen and (min-width: 1000px) {
   .form-container {
-    background: linear-gradient(to bottom, #78aaff, #cad3e8);
     height: 210vh;
     width: 100%;
     display: flex;
@@ -236,7 +235,6 @@
     cursor: pointer;
     font-size: 15px;
     color: #fff;
-    background-color: #1b2d52;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -245,8 +243,6 @@
     border: none;
   }
   .contact-form-submit-btn:hover {
-    color: #fff;
-    background-color: #98a2b3;
   }
   .get-touch-container {
     margin-top: 50px;

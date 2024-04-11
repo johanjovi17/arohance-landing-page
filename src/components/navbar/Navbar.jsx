@@ -66,7 +66,7 @@ const Navbar = () => {
           animate={{ opacity: 1, transition: { delay: 0.5, ease: "easeIn" } }}
           className="logo"
         >
-          TapOver.
+          Arohance.
         </motion.span>
       </Link>
       <div className={`nav-items-container ${isMenuOpen ? "active" : ""}`}>

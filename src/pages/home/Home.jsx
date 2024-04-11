@@ -27,7 +27,8 @@ function Home() {
             }}
             class="small-title"
           >
-            WEB DEVELOPMENT, ADVERTISING & MARKETING AGENCY
+            <span class="word-color"> WEB DEVELOPMENT</span>, ADVERTISING &
+            MARKETING AGENCY
           </motion.div>
           <motion.div
             initial={{ x: -100, opacity: 0 }}
@@ -42,7 +43,7 @@ function Home() {
             class="title-big"
           >
             We help <br />
-            brands Grow Beautifully
+            brands Grow <span class="word-color">Beautifully</span>
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -226,7 +227,7 @@ function Home() {
           class="web-solutions-mini-title"
         >
           We create your digital presence and increase your visibility with our
-          web development solutions.
+          <span class="word-color"> web development</span> solutions.
         </motion.h4>
         <div class="web-solutions-row">
           <motion.div
@@ -379,7 +380,9 @@ function Home() {
             class="split-content-left-content"
           >
             <h1 class="split-content-heading">
-              We are an Website Development Advertising & Marketing firm .
+              We are a Website Development{" "}
+              <span class="word-color">Advertising</span> &{" "}
+              <span class="word-color"> Marketing firm</span> .
             </h1>
             <p class="split-content-text">
               From crafting strategic plans to managing your online buzz,
@@ -431,7 +434,7 @@ function Home() {
             whileInView={{ opacity: 1, transition: { delay: 0.5 } }}
             class="review-mini-title"
           >
-            Don’t settle for mediocrity. Choose Bytedepth and watch your brand
+            Don’t settle for mediocrity. Choose Arohance and watch your brand
             soar!
           </motion.span>
           <span class="review-section-line"></span>
