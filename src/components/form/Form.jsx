@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./form.css";
 import { motion } from "framer-motion";
 
@@ -11,6 +11,10 @@ function Form() {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to top on component mount
+  }, []);
 
   // Function to handle form input changes
   const handleInputChange = (e) => {
@@ -131,15 +135,21 @@ function Form() {
         <h2 className="get-touch-title">Get In Touch</h2>
         <div className="get-touch-mini-title">Reach Us</div>
         <ul className="get-touch-list">
-          <li className="get-in-touch-items">Delhi, India</li>
+          <li className="get-in-touch-items">Bangalore, India</li>
           <li className="get-in-touch-items">Kv@gmail.com</li>
-          <li className="get-in-touch-items">123456</li>
-          <li className="get-in-touch-items">1234567</li>
+          <li className="get-in-touch-items">+91 94276 73035(Neer Shah)</li>
+          <li className="get-in-touch-items">
+            +91 93273 67979(Kaivaniya Bhandari)
+          </li>
         </ul>
         <span className="call-reach-title">Call/Whatsapp</span>
         <br />
         <br />
-        <span className="phone-number">1234567</span>
+        <span className="phone-number">+91 94276 73035(Neer Shah)</span>
+        <br />
+        <span className="phone-number">
+          +91 93273 67979(Kaivaniya Bhandari)
+        </span>
         <div className="would-you-like-section">
           <div className="would-you-like-section-left-content">
             <span className="would-you-like-section-title">

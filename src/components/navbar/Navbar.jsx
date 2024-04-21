@@ -60,7 +60,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/" activeClassName="active-link" className=" nav-item link">
+      <Link to="/" activeClassName="active-link" className="logo">
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1, transition: { delay: 0.5, ease: "easeIn" } }}

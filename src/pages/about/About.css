@@ -24,14 +24,14 @@
 }
 /* second section in about */
 .about-second-section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 0 10px; */
+  padding: 30px 0;
 }
 .about-row-1 {
   width: 100%;
@@ -73,7 +73,7 @@
 }
 /* why choose us section */
 .why-choose-us-section {
-  height: 130vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(
       to bottom,
@@ -90,7 +90,7 @@
   justify-content: center;
   position: relative;
   color: #fff;
-  padding-top: 20px;
+  padding: 30px 0;
 }
 .why-choose-us-central-container {
   width: 80%;

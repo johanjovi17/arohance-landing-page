@@ -69,7 +69,8 @@ function Footer() {
             class="contact-list-items"
           >
             <li class="contact-item">Bangalore</li>
-            <li class="contact-item">+12345678</li>
+            <li class="contact-item">+91 94276 73035(Neer Shah)</li>
+            <li class="contact-item">+91 93273 67979(Kaivaniya Bhandari)</li>
             <li class="contact-item">kv@tapover.com</li>
           </motion.ul>
         </div>

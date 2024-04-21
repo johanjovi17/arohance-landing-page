@@ -32,7 +32,7 @@
 }
 /* what we do section */
 .what-we-do-section {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background-image: url("../../../public/assets/services-what-we-do-pic.jpg");
   background-size: cover;
@@ -79,12 +79,13 @@
 }
 /* services grid section */
 .services-grid-section {
-  height: 350vh;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   background-color: #000;
   flex-direction: column;
+  padding: 30px 0;
   color: #fff;
 }
 .services-grid-row {
