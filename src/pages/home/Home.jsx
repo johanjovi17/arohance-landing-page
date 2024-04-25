@@ -3,6 +3,14 @@ import "./Home.css";
 import Navbar from "../../components/navbar/Navbar";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
+// gif files
+import seo from "./seo.gif";
+import ecomm from "./ecomm.gif";
+import content from "./content.gif";
+import digMark from "./digMark.gif";
+import perf from "./perf.gif";
+import web from "./web.gif";
+import influencer from "./influencer.gif";
 
 // animation
 import { motion } from "framer-motion";
@@ -34,11 +42,11 @@ function Home() {
 
   return (
     <>
-      <div class="hero-container">
+      <div className="hero-container">
         <Navbar />
 
         {/* hero content  */}
-        <div class="hero-content">
+        <div className="hero-content">
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -49,9 +57,9 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="small-title"
+            className="small-title"
           >
-            <span class="word-color"> WEB DEVELOPMENT</span>, ADVERTISING &
+            <span className="word-color"> WEB DEVELOPMENT</span>, ADVERTISING &
             MARKETING AGENCY
           </motion.div>
           <motion.div
@@ -64,10 +72,10 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="title-big"
+            className="title-big"
           >
             We help <br />
-            brands Grow <span class="word-color">Beautifully</span>
+            brands Grow <span className="word-color">Beautifully</span>
           </motion.div>
           <motion.div
             initial={{ x: 100, opacity: 0 }}
@@ -81,7 +89,7 @@ function Home() {
               duration: 1,
             }}
           >
-            <a href="" class="hero-btn">
+            <a href="" className="hero-btn">
               GET STARTED NOW
             </a>
           </motion.div>
@@ -89,21 +97,21 @@ function Home() {
       </div>
 
       {/* <!-- grid section --> */}
-      <div class="grid-container">
-        <div class="grid-content">
-          <div class="grid-box-section row1">
-            <motion.div
+      <div className="grid-container">
+        <div className="grid-content">
+          <div className="grid-box-section row1">
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 0.5, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Web Development</h4>
-              <span class="grid-box-num">01</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Web Development</h4>
+              <span className="grid-box-num">01</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Web Hosting and Domain Setup
                   </h2>
@@ -114,7 +122,7 @@ function Home() {
                     data reside.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Web Application SEO Integration
                   </h2>
@@ -127,22 +135,22 @@ function Home() {
                 </li>
               </ul>
 
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 0.6, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">App Development</h4>
-              <span class="grid-box-num">02</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">App Development</h4>
+              <span className="grid-box-num">02</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Custom App Development Services
                   </h2>
@@ -154,7 +162,7 @@ function Home() {
                     ideas to life.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Integration and Maintenance
                   </h2>
@@ -167,22 +175,22 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 0.7, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Marketing</h4>
-              <span class="grid-box-num">03</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Marketing</h4>
+              <span className="grid-box-num">03</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Website Audit and Optimization
                   </h2>
@@ -193,7 +201,7 @@ function Home() {
                     search engines can crawl and index your site effectively.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Keyword Research and Strategy
                   </h2>
@@ -205,23 +213,23 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
+            </div>
 
-            <motion.div
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 0.8, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Ai Automation and Chatbots</h4>
-              <span class="grid-box-num">04</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Ai Automation and Chatbots</h4>
+              <span className="grid-box-num">04</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     AI Automation Solutions
                   </h2>
@@ -233,7 +241,7 @@ function Home() {
                     tasks, and more.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Chatbot Development
                   </h2>
@@ -246,22 +254,24 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 0.9, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Social Media & Performance Marketing</h4>
-              <span class="grid-box-num">05</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">
+                Social Media & Performance Marketing
+              </h4>
+              <span className="grid-box-num">05</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Social Media Management
                   </h2>
@@ -274,7 +284,7 @@ function Home() {
                     increase audience engagement.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Paid Advertising Campaigns
                   </h2>
@@ -288,22 +298,22 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 1, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Performance Marketing</h4>
-              <span class="grid-box-num">06</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Performance Marketing</h4>
+              <span className="grid-box-num">06</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Targeted Advertising Campaigns
                   </h2>
@@ -316,7 +326,7 @@ function Home() {
                     high-quality traffic that converts into actionable outcomes.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Conversion Rate Optimization (CRO)
                   </h2>
@@ -327,22 +337,22 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 1, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Physical Marketing</h4>
-              <span class="grid-box-num">07</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Physical Marketing</h4>
+              <span className="grid-box-num">07</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">Print Advertising</h2>
                   <p className="grid-box-service-desc">
                     We specialize in print advertising campaigns, including
@@ -352,7 +362,7 @@ function Home() {
                     convey your brand message effectively to offline audiences.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Event Marketing and Sponsorship
                   </h2>
@@ -366,22 +376,22 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 1, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">Graphic Designing</h4>
-              <span class="grid-box-num">08</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">Graphic Designing</h4>
+              <span className="grid-box-num">08</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Logo and Brand Identity Design
                   </h2>
@@ -393,7 +403,7 @@ function Home() {
                     versatile, and aligned with your brand's personality.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Marketing Collateral Creation
                   </h2>
@@ -406,22 +416,22 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
-            <motion.div
+            </div>
+            <div
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
                 transition: { delay: 1, ease: "easeIn" },
               }}
-              class="grid-box"
+              className="grid-box"
             >
-              <h4 class="grid-title">NFC BUSINESS CARDS</h4>
-              <span class="grid-box-num">09</span>
-              <ul class="grid-list">
-                <li class="grid-list-item">
+              <h4 className="grid-title">NFC BUSINESS CARDS</h4>
+              <span className="grid-box-num">09</span>
+              <ul className="grid-list">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">NFC Business Cards</h2>
                   <p className="grid-box-service-desc">
                     We design and produce NFC-enabled business cards that allow
@@ -432,7 +442,7 @@ function Home() {
                     information is always accessible.
                   </p>
                 </li>
-                <li class="grid-list-item">
+                <li className="grid-list-item">
                   <h2 className="grid-box-service-title">
                     Contactless Payment Systems
                   </h2>
@@ -446,15 +456,15 @@ function Home() {
                   </p>
                 </li>
               </ul>
-              <a href="" class="grid-read-more-btn">
+              <a href="" className="grid-read-more-btn">
                 READ MORE
               </a>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
       {/* <!-- web solutions section --> */}
-      <div class="web-solutions-container">
+      <div className="web-solutions-container">
         <motion.h2
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -465,7 +475,7 @@ function Home() {
             ease: "easeIn",
             duration: 1,
           }}
-          class="web-solutions-heading"
+          className="web-solutions-heading"
         >
           Web Solutions
         </motion.h2>
@@ -479,12 +489,12 @@ function Home() {
             ease: "easeIn",
             duration: 1,
           }}
-          class="web-solutions-mini-title"
+          className="web-solutions-mini-title"
         >
           We create your digital presence and increase your visibility with our
-          <span class="word-color"> web development</span> solutions.
+          <span className="word-color"> web development</span> solutions.
         </motion.h4>
-        <div class="web-solutions-row">
+        <div className="web-solutions-row">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -495,10 +505,14 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Search Engine Optimization</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={seo} style={{ width: "230px" }} /> */}
+            <img src={seo} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">
+              Search Engine Optimization
+            </h3>
+            <p className="web-solution-box-description">
               With effective SEO practices, we increase the ranking of your
               website and increase site traffic and visibility.
             </p>
@@ -513,10 +527,12 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">E-Commerce Solutions</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={ecomm} style={{ width: "230px" }} /> */}
+            <img src={ecomm} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">E-Commerce Solutions</h3>
+            <p className="web-solution-box-description">
               As Shopify experts, we enhance your e-commerce store with tailored
               solutions and seamless transitions.
             </p>
@@ -531,17 +547,19 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Digital Media Planning</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={digMark} style={{ width: "230px" }} /> */}
+            <img src={digMark} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">Digital Media Planning</h3>
+            <p className="web-solution-box-description">
               We create the media strategy for your brand on digital channels
               with advertising technologies suitable for your marketing strategy
               and target audience.
             </p>
           </motion.div>
         </div>
-        <div class="web-solutions-row">
+        <div className="web-solutions-row">
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -552,10 +570,12 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Content Marketing</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={content} style={{ width: "230px" }} /> */}
+            <img src={content} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">Content Marketing</h3>
+            <p className="web-solution-box-description">
               We deliver your products and services to your potential customers
               both domestically and abroad with content marketing, which is a
               new generation digital communication tool.
@@ -571,10 +591,12 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Web Development</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={web} style={{ width: "230px" }} /> */}
+            <img src={web} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">Web Development</h3>
+            <p className="web-solution-box-description">
               We develop software solutions tailored to the specific needs of
               your business, making your processes more efficient.
             </p>
@@ -589,10 +611,12 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Performance Marketing</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={perf} style={{ width: "230px" }} /> */}
+            <img src={perf} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">Performance Marketing</h3>
+            <p className="web-solution-box-description">
               With performance marketing solutions that suit your marketing
               strategy, we increase your online presence in the digital world
               and achieve real results for your business.
@@ -608,10 +632,12 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="web-solutions-box"
+            className="web-solutions-box"
           >
-            <h3 class="web-solution-box-title">Influencer Marketing</h3>
-            <p class="web-solution-box-description">
+            {/* <Lottie animationData={influencer} style={{ width: "230px" }} /> */}
+            <img src={influencer} alt="" className="web-solution-gif" />
+            <h3 className="web-solution-box-title">Influencer Marketing</h3>
+            <p className="web-solution-box-description">
               Utilize influencer marketing to amplify your brand's reach.
               Connect with authentic creators to engage your audience and drive
               conversions, maximizing your marketing impact.
@@ -620,8 +646,8 @@ function Home() {
         </div>
       </div>
       {/* <!-- Split content section --> */}
-      <div class="split-content-container">
-        <div class="split-content-central-content">
+      <div className="split-content-container">
+        <div className="split-content-central-content">
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -632,14 +658,14 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="split-content-left-content"
+            className="split-content-left-content"
           >
-            <h1 class="split-content-heading">
+            <h1 className="split-content-heading">
               We are a Website Development{" "}
-              <span class="word-color">Advertising</span> &{" "}
-              <span class="word-color"> Marketing firm</span> .
+              <span className="word-color">Advertising</span> &{" "}
+              <span className="word-color"> Marketing firm</span> .
             </h1>
-            <p class="split-content-text">
+            <p className="split-content-text">
               From crafting strategic plans to managing your online buzz,
               Digital Marker empowers businesses to thrive in the digital age.
               We’ll optimize your content, SEO, and social media, propelling
@@ -648,7 +674,7 @@ function Home() {
             </p>
             <br />
             <br />
-            <p class="split-content-text">
+            <p className="split-content-text">
               We’re your one-stop Solutions for comprehensive marketing, from
               crafting data-driven strategies to managing engaging social media
               campaigns. Our SEO expertise bolsters your online presence, while
@@ -656,7 +682,7 @@ function Home() {
               Us and unlock the privilege of a thriving digital future.
             </p>
           </motion.div>
-          <div class="split-content-right-content">
+          <div className="split-content-right-content">
             <motion.img
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -669,30 +695,30 @@ function Home() {
               }}
               src="/assets/split-screen-pic.jpg"
               alt="split-screen-pic"
-              class="split-screen-pic"
+              className="split-screen-pic"
             />
           </div>
         </div>
       </div>
       {/* <!-- reviews section --> */}
-      <div class="review-container">
-        <div class="review-container-central-content">
+      <div className="review-container">
+        <div className="review-container-central-content">
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { delay: 0.3 } }}
-            class="review-title"
+            className="review-title"
           >
             Our Clients Review
           </motion.h2>
           <motion.span
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, transition: { delay: 0.5 } }}
-            class="review-mini-title"
+            className="review-mini-title"
           >
             Don’t settle for mediocrity. Choose Arohance and watch your brand
             soar!
           </motion.span>
-          <span class="review-section-line"></span>
+          <span className="review-section-line"></span>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -703,38 +729,38 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="review-row"
+            className="review-row"
           >
-            <div class="review-box">
-              <p class="review-text">
+            <div className="review-box">
+              <p className="review-text">
                 Exceptional service! This company goes above and beyond to meet
                 their customers’ needs. I couldn’t be happier with the results.
               </p>
-              <div class="review-person-info">
+              <div className="review-person-info">
                 <img
                   src="/assets/review-pic-1.jpg"
                   alt=""
-                  class="review-person-pic"
+                  className="review-person-pic"
                 />
-                <span class="review-person-name">Kamlesh</span>
+                <span className="review-person-name">Kamlesh</span>
               </div>
             </div>
-            <div class="review-box">
-              <p class="review-text">
+            <div className="review-box">
+              <p className="review-text">
                 Outstanding quality and professionalism. I’ve been a loyal
                 customer for 3 months and have never been disappointed.
               </p>
-              <div class="review-person-info">
+              <div className="review-person-info">
                 <img
                   src="/assets/review-pic-2.jpg"
                   alt=""
-                  class="review-person-pic"
+                  className="review-person-pic"
                 />
-                <span class="review-person-name">Sourav</span>
+                <span className="review-person-name">Sourav</span>
               </div>
             </div>
           </motion.div>
-          <span class="review-section-line"></span>
+          <span className="review-section-line"></span>
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -745,41 +771,41 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="review-row"
+            className="review-row"
           >
-            <div class="review-box">
-              <p class="review-text">
+            <div className="review-box">
+              <p className="review-text">
                 Impressive attention to detail and excellent communication.
                 Working with this team has been a pleasure.
               </p>
-              <div class="review-person-info">
+              <div className="review-person-info">
                 <img
                   src="/assets/review-pic-3.jpg"
                   alt=""
-                  class="review-person-pic"
+                  className="review-person-pic"
                 />
-                <span class="review-person-name">Tahir</span>
+                <span className="review-person-name">Tahir</span>
               </div>
             </div>
-            <div class="review-box">
-              <p class="review-text">
+            <div className="review-box">
+              <p className="review-text">
                 Reliable and trustworthy. I highly recommend this business to
                 anyone looking for top-notch marketing services.
               </p>
-              <div class="review-person-info">
+              <div className="review-person-info">
                 <img
                   src="/assets/review-pic-4.jpg"
                   alt=""
-                  class="review-person-pic"
+                  className="review-person-pic"
                 />
-                <span class="review-person-name">Rajiv</span>
+                <span className="review-person-name">Rajiv</span>
               </div>
             </div>
           </motion.div>
-          <span class="review-section-line"></span>
+          <span className="review-section-line"></span>
         </div>
-        <div class="review-bottom-row">
-          <div class="review-bottom-left-content">
+        <div className="review-bottom-row">
+          <div className="review-bottom-left-content">
             <motion.h2
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -790,7 +816,7 @@ function Home() {
                 ease: "easeIn",
                 duration: 1,
               }}
-              class="review-bottom-heading"
+              className="review-bottom-heading"
             >
               Would you like to start a project with us?
             </motion.h2>
@@ -804,7 +830,7 @@ function Home() {
                 ease: "easeIn",
                 duration: 1,
               }}
-              class="review-bottom-desc"
+              className="review-bottom-desc"
             >
               Embark on a journey of digital excellence! Ready to turn your
               ideas into reality? Let's collaborate and launch a successful
@@ -821,10 +847,10 @@ function Home() {
               ease: "easeIn",
               duration: 1,
             }}
-            class="review-bottom-right-content"
+            className="review-bottom-right-content"
           >
-            <Link to="/contact" class="review-bottom-btn-link">
-              <a href="#" class="review-bottom-btn">
+            <Link to="/contact" className="review-bottom-btn-link">
+              <a href="#" className="review-bottom-btn">
                 START A PROJECT
               </a>
             </Link>
@@ -832,25 +858,25 @@ function Home() {
         </div>
       </div>
       {/* <!-- Incremental counter section --> */}
-      <div class="incremental-counter-container">
-        <div class="incremental-counter-central-content">
-          <div class="incremental-counter-box">
-            <span class="num" data-val="150">
+      <div className="incremental-counter-container">
+        <div className="incremental-counter-central-content">
+          <div className="incremental-counter-box">
+            <span className="num" data-val="150">
               000
             </span>
-            <p class="incremental-counter-title">PROJECTS</p>
+            <p className="incremental-counter-title">PROJECTS</p>
           </div>
-          <div class="incremental-counter-box">
-            <span class="num" data-val="130">
+          <div className="incremental-counter-box">
+            <span className="num" data-val="130">
               000
             </span>
-            <p class="incremental-counter-title">HAPPY CLIENTS</p>
+            <p className="incremental-counter-title">HAPPY CLIENTS</p>
           </div>
-          <div class="incremental-counter-box">
-            <span class="num" data-val="15">
+          <div className="incremental-counter-box">
+            <span className="num" data-val="15">
               000
             </span>
-            <p class="incremental-counter-title">TEAM MEMBERS</p>
+            <p className="incremental-counter-title">TEAM MEMBERS</p>
           </div>
         </div>
       </div>

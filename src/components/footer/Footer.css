@@ -57,7 +57,7 @@
   list-style: none;
 }
 .contact-item {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .contact-item:hover {
   color: #ff0000;
@@ -65,4 +65,13 @@
 .copyright-statement {
   font-size: 15px;
   margin: 0 auto;
+}
+.social-media-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.social-media-icon:hover {
+  color: #ff0000;
+  cursor: pointer;
 }

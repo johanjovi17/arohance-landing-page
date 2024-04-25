@@ -137,18 +137,22 @@ function Form() {
         <ul className="get-touch-list">
           <li className="get-in-touch-items">Bangalore, India</li>
           <li className="get-in-touch-items">Kv@gmail.com</li>
-          <li className="get-in-touch-items">+91 94276 73035(Neer Shah)</li>
+          <li className="get-in-touch-items">+91 94276 73035 (Neer Shah)</li>
           <li className="get-in-touch-items">
-            +91 93273 67979(Kaivaniya Bhandari)
+            +91 93273 67979 (Kaivaniya Bhandari)
           </li>
         </ul>
         <span className="call-reach-title">Call/Whatsapp</span>
         <br />
         <br />
-        <span className="phone-number">+91 94276 73035(Neer Shah)</span>
+        <span className="phone-number">
+          +91 94276 73035
+          <br />
+          (Neer Shah)
+        </span>
         <br />
         <span className="phone-number">
-          +91 93273 67979(Kaivaniya Bhandari)
+          +91 93273 67979 <br /> (Kaivaniya Bhandari)
         </span>
         <div className="would-you-like-section">
           <div className="would-you-like-section-left-content">

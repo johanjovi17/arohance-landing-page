@@ -114,11 +114,13 @@
   background-color: orangered;
   padding: 30px 50px;
   width: 150px;
-  /* display: none; */
 }
-.what-we-do-title {
-  font-size: 35px;
+.what-we-do-title-box {
+  font-size: 25px;
   margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
 }
 /* start proj w us section */
 .about-review-bottom-row {
@@ -193,8 +195,6 @@
     left: 35%;
   }
   .what-we-do-title {
-    font-size: 35px;
-    margin-bottom: 20px;
     text-align: left;
     width: 60%;
   }

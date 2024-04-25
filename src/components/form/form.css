@@ -1,5 +1,5 @@
 .form-container {
-  background: linear-gradient(to bottom, #ff7300, #ff0000);
+  background: black;
   height: 210vh;
   width: 100%;
   display: flex;
@@ -241,8 +241,6 @@
     border-radius: 5px;
     transition: all 0.7s ease;
     border: none;
-  }
-  .contact-form-submit-btn:hover {
   }
   .get-touch-container {
     margin-top: 50px;

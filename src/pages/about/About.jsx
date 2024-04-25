@@ -121,7 +121,7 @@ function About() {
             }}
             className="what-we-do-box"
           >
-            <h3 className="what-we-do-title">What We Do</h3>
+            <p className="what-we-do-title-box">What We Do</p>
             <ul className="what-we-do-list-items">
               <li className="what-we-do-list-item">UI UX Design</li>
               <li className="what-we-do-list-item">Website Development</li>
