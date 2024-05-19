@@ -50,7 +50,12 @@ function Footer() {
             <FaLinkedin className="social-media-icon" />
             <FaFacebook className="social-media-icon" />
             <FaInstagram className="social-media-icon" />
-            <FaTwitter className="social-media-icon" />
+            <a
+              href="https://www.linkedin.com/company/arohance-india/people/ "
+              style={{ color: "#fff" }}
+            >
+              <FaTwitter className="social-media-icon" />
+            </a>
           </motion.div>
         </div>
         <div class="footer-top-content-right-content">

@@ -549,7 +549,6 @@ function Home() {
             }}
             className="web-solutions-box"
           >
-            {/* <Lottie animationData={digMark} style={{ width: "230px" }} /> */}
             <img src={digMark} alt="" className="web-solution-gif" />
             <h3 className="web-solution-box-title">Digital Media Planning</h3>
             <p className="web-solution-box-description">
@@ -572,7 +571,6 @@ function Home() {
             }}
             className="web-solutions-box"
           >
-            {/* <Lottie animationData={content} style={{ width: "230px" }} /> */}
             <img src={content} alt="" className="web-solution-gif" />
             <h3 className="web-solution-box-title">Content Marketing</h3>
             <p className="web-solution-box-description">

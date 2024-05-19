@@ -4,6 +4,11 @@
   background-color: none;
   justify-content: space-between;
   padding: 10px 0;
+  /* position: fixed;
+  top: 0;
+  background-color: #000;
+  z-index: 999; */
+  background-color: black;
 }
 .logo {
   margin-left: 20px;
@@ -24,7 +29,14 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.4s ease;
-  font-size: 18px;
+  font-size: 16px;
+  display: block; /*added new*/
+  padding: 0 5px;
+}
+/*added new*/
+.nav-link {
+  display: inline-block;
+  position: relative;
 }
 .navLink:hover {
   color: #ff0000;
@@ -46,6 +58,42 @@
   border-radius: 20px;
   transition: 0.4s;
 }
+.nav-bar-services-dropdown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: none;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.nav-bar-services-dropdown.open {
+  display: block;
+}
+.nav-bar-services-dropdown li {
+  display: block;
+  text-align: center;
+  padding: 8px 10px;
+}
+.nav-bar-services-dropdown-navLink {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 13px;
+  color: #ff0000;
+  transition: all 0.6s ease;
+}
+.nav-bar-services-dropdown-navLink:hover {
+  color: #ff0000;
+}
+
+.navbar-dropdown-down-arrow {
+  font-size: 13px;
+}
+.navbar-dropdown-down-arrow.inverted {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
 
 @media only screen and (max-width: 768px) {
   .menu-btn {
@@ -55,6 +103,7 @@
   .navbar {
     flex-direction: column;
     background-color: black;
+    z-index: 999;
   }
   .nav-links {
     margin-top: 20px;
@@ -82,5 +131,9 @@
 
   .menu-bar.open:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-bar-services-dropdown {
+    position: static;
+    z-index: 0;
   }
 }

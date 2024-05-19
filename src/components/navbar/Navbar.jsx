@@ -1,11 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropDownService, setDropDownService] = useState(false);
+  const [isInverted, setIsInverted] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const handleServicesDropdown = () => {
+    setDropDownService(!dropDownService);
+    setIsInverted(!isInverted);
   };
   return (
     <div className="navbar">
@@ -32,13 +39,47 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-link">
-          <Link
-            to="/services"
-            className="navLink"
-            onClick={() => setMenuOpen(false)}
+          <p className="navLink" onClick={handleServicesDropdown}>
+            Services{" "}
+            <FaChevronDown
+              className={`navbar-dropdown-down-arrow ${
+                isInverted ? "inverted" : ""
+              }`}
+            />
+          </p>
+          <ul
+            className={`nav-bar-services-dropdown ${
+              dropDownService ? "open" : ""
+            }`}
           >
-            Services
-          </Link>
+            <li>
+              <Link
+                to="/marketing"
+                className="nav-bar-services-dropdown-navLink"
+                onClick={() => setMenuOpen(false)}
+              >
+                Marketing
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/technology"
+                className="nav-bar-services-dropdown-navLink"
+                onClick={() => setMenuOpen(false)}
+              >
+                Web Dev
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/other"
+                className="nav-bar-services-dropdown-navLink"
+                onClick={() => setMenuOpen(false)}
+              >
+                Other
+              </Link>
+            </li>
+          </ul>
         </li>
         <li className="nav-link">
           <Link

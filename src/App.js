@@ -2,42 +2,23 @@ import Home from "./pages/home/Home.jsx";
 import About from "./pages/about/About.jsx";
 import Services from "./pages/services/Services.jsx";
 import Contact from "./pages/contact/Contact.jsx";
-// import { Routes, Route } from "react-router-dom";
-
-import {
-  Route,
-  Routes,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from "react-router-dom";
-
-import Mainlayout from "./layouts/Mainlayout.jsx";
+import Marketing from "./pages/marketing/Marketing.jsx";
+import Technology from "./pages/technology/Technology.jsx";
+import Other from "./pages/other/Other.jsx";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} exact />
+      <Route path="/" element={<Home />} />
+      <Route path="/marketing" element={<Marketing />} />
+      <Route path="/technology" element={<Technology />} />
+      <Route path="/other" element={<Other />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Services />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }
-
-// const App = () => {
-//   const router = createBrowserRouter(
-//     createRoutesFromElements(
-//       <Route path="/" element={<Mainlayout />}>
-//         <Route index element={<Home />} />
-//         <Route path="/about" element={<About />} />
-//         <Route path="/services" element={<Services />} />
-//         <Route path="/contact" element={<Contact />} />
-//       </Route>
-//     )
-//   );
-
-//   return <RouterProvider router={router} />;
-// };
 
 export default App;
