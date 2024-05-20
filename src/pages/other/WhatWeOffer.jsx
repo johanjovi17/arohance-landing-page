@@ -20,7 +20,16 @@ const WhatWeOffer = () => {
         "Other crypto bots",
         "Stock market analysing",
         "Facebook/ Amazon/ Google ads",
-        "and many more",
+        "and many more",
+      ],
+    },
+    {
+      title: "NFC solutions",
+      services: [
+        "NFC PVC Business cards",
+        "NFC Metal Business cards",
+        "NFC Inventory Management Systems",
+        "and many more",
       ],
     },
   ];
