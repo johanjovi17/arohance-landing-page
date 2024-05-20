@@ -67,7 +67,7 @@ const Navbar = () => {
                 className="nav-bar-services-dropdown-navLink"
                 onClick={() => setMenuOpen(false)}
               >
-                Web Dev
+                Web/App Dev
               </Link>
             </li>
             <li>

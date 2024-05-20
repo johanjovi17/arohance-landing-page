@@ -18,23 +18,6 @@ function Footer() {
           >
             FOLLOW US
           </motion.h4>
-          {/* <motion.ul
-            initial={{ y: 100, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{
-              delay: 0.3,
-              y: { type: "spring", stiffness: 60 },
-              opacity: { duration: 1 },
-              ease: "easeIn",
-              duration: 1,
-            }}
-            class="footer-social-media-links"
-          >
-            <li class="footer-social-media-link">Linkedin</li>
-            <li class="footer-social-media-link">Facebook</li>
-            <li class="footer-social-media-link">Instagram</li>
-            <li class="footer-social-media-link">Twitter</li>
-          </motion.ul> */}
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
@@ -47,14 +30,19 @@ function Footer() {
             }}
             className="social-media-icon-container"
           >
-            <FaLinkedin className="social-media-icon" />
+            <a
+              href="https://www.instagram.com/arohance/"
+              style={{ color: "#fff" }}
+            >
+              <FaInstagram className="social-media-icon" />
+            </a>
             <FaFacebook className="social-media-icon" />
-            <FaInstagram className="social-media-icon" />
+            <FaTwitter className="social-media-icon" />
             <a
               href="https://www.linkedin.com/company/arohance-india/people/ "
               style={{ color: "#fff" }}
             >
-              <FaTwitter className="social-media-icon" />
+              <FaLinkedin className="social-media-icon" />
             </a>
           </motion.div>
         </div>
