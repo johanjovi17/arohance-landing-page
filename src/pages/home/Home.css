@@ -343,9 +343,11 @@
 }
 .review-bottom-btn-link {
   text-decoration: none;
+  color: #ff0000;
+  padding: 10px 15px;
+  transition: all 0.6s ease;
 }
-.review-bottom-btn:hover {
-  border: 2px solid #fff;
+.review-bottom-btn-link:hover {
   background-color: #fff;
 }
 /* incremental counter section */
